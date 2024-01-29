@@ -1,12 +1,12 @@
 let toastBox = document.getElementById('toastBox');
 
 const showToast = (msg) => {
-    let toastModal = document.createElement('div');
-    toastModal.classList.add('toast');
-    toastModal.innerHTML = msg;
-    toastBox.appendChild(toastModal);
+    let toast = document.createElement('div');
+    toast.classList.add('toast');
+    toast.innerHTML = msg;
+    toastBox.appendChild(toast);
 
     setTimeout(() => {
-        toastBox.remove();
-    }, 2500);
+        toast.remove();
+    }, 2000);
 }

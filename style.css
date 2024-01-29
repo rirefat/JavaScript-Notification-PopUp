@@ -61,15 +61,35 @@ button:hover {
 }
 
 .toast{
+  padding-left: 1.5rem;
+  position: relative;
   width: 400px;
   height: 80px;
   background: #fff;
   font-weight: 600;
   font-size: 1.2rem;
   margin: 15px 0;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.toast::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(130deg, #52288f, #ad94f1);
+  animation: animate 2s linear forwards;
+}
+
+@keyframes animate {
+  100%{
+    width: 0;
+  }
 }
 
 @media (min-width: 768px) {
@@ -78,5 +98,3 @@ button:hover {
   }
 }
         
-
-/* Parent background */
