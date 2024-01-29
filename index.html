@@ -10,10 +10,12 @@
 
 <body>
     <div class="buttons">
-        <button>Success</button>
-        <button>Info</button>
-        <button>Warning</button>
+        <button onclick="showToast('Success')">Success</button>
+        <button onclick="showToast('Info')">Info</button>
+        <button onclick="showToast('Warning')">Warning</button>
     </div>
+
+    <div id="toastBox"></div>
 
     <script src="./app.js"></script>
 </body>
