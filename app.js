@@ -5,4 +5,8 @@ const showToast = (msg) => {
     toastModal.classList.add('toast');
     toastModal.innerHTML = msg;
     toastBox.appendChild(toastModal);
+
+    setTimeout(() => {
+        toastBox.remove();
+    }, 2500);
 }
